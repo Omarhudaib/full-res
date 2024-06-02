@@ -4,7 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organic Store</title>
     <link rel="stylesheet" href="style.css">
-    <style>body {
+    <style>
+    body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
@@ -82,6 +83,7 @@
             background-color: #ffffff;
             color: #000;
             padding: 10px;
+            margin-right: 5%;
             font-size: 16px;
             border: 1px solid #ccc;
             cursor: pointer;
@@ -107,6 +109,7 @@
             display: block;
         }
         .search-bar {
+            justify-content: center;
             display: flex;
             flex-grow: 1;
             margin-left: 10px;
@@ -222,7 +225,7 @@
     .categories {
         display: flex;
         justify-content: space-around;
-        margin-top: 20px;
+        margin-top: 35px;
     }
     
     .category {
@@ -277,29 +280,6 @@
         
     </header>
     <div class="container">
-        <div class="dropdown">
-            <button class="dropdown-button">All Categories</button>
-            <div class="dropdown-content">
-                <a href="#">Category 1</a>
-                <a href="#">Category 2</a>
-                <a href="#">Category 3</a>
-            </div>
-        </div>
-        <div class="search-bar">
-            <input type="text" placeholder="What do you need?">
-            <button>SEARCH</button>
-        </div>
-        <div class="contact-info">
-            <div class="phone-icon">
-                <img src="https://th.bing.com/th/id/OIP.yJen-VQvvV-rX2jfY7HAowHaHa?w=201&h=201&c=7&r=0&o=5&pid=1.7" alt="Phone" width="24" height="24">
-            </div>
-            <div>
-                <div class="phone-number">+65 11.188.888</div>
-                <div class="support-time">support 24/7 time</div>
-            </div>
-        </div>
-    </div>
-    
         <div class="dropdown1">
             <button class="dropdown-button1">All departments</button>
             <div class="dropdown-content1">
@@ -317,12 +297,39 @@
             </div>
         </div>
         
+   
+        <div class="search-bar ">
+            <div class="dropdown ">
+                <button class="dropdown-button">All Categories</button>
+                <div class="dropdown-content">
+                    <a href="#">Category 1</a>
+                    <a href="#">Category 2</a>
+                    <a href="#">Category 3</a>
+                </div>
+            </div>
+            <input type="text" placeholder="What do you need?">
+            <button>SEARCH</button>
+        </div>
+        <div class="contact-info">
+            <div class="phone-icon">
+                <img src="https://th.bing.com/th/id/OIP.yJen-VQvvV-rX2jfY7HAowHaHa?w=201&h=201&c=7&r=0&o=5&pid=1.7" alt="Phone" width="24" height="24">
+            </div>
+            <div>
+                <div class="phone-number">+65 11.188.888</div>
+                <div class="support-time">support 24/7 time</div>
+            </div>
+        </div>
+    </div>
+    
+        
     
     <main>
-        <section class="hero" style="background-image: url('file:///C:/Users/Orange/Desktop/vegatabels/banner.jpg');">
-            <h1>Vegetable 100% Organic</h1>
+        <section class="hero" style="padding: 0;" >
+            <div style="position: relative;"><img style="width:85vw; height: 45vh;" src="banner.jpg" alt=""></div>
+            <div style="position: absolute; text-align: left;top: 30vh;margin: 5%;">
+            <h2>Vegetable 100% Organic</h2>
             <p>Free Pickup and Delivery Available</p>
-            <button>Shop Now</button>
+            <button>Shop Now</button></div>
         </section>
         <section class="categories">
             <div class="category">
@@ -346,4 +353,5 @@
 
 </body>
 </html>
+
 
